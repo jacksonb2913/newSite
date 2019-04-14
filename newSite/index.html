@@ -175,12 +175,19 @@
         .cardDonate {
             border-radius: 30px;
         }
-       
-         .donations{
-            display: inline-block;
-            width:10rem;
-           margin:none;
-          }
+        
+        .donations button {
+            display: inline-block !important;
+            width: 10rem;
+            margin: 1rem;
+        }
+        /*.donateBit{
+           display: inline-block !important;
+          }*/
+        
+        .donate {
+            margin-top: 3rem;
+        }
     </style>
 </head>
 
@@ -280,9 +287,12 @@
             </div>
             <div id="donate">
                 <h1 class="font-weight-bold">Donate</h1>
-                <a href="#donateCard">
-                    <button class="cardDonate">Donate with Card</button>
-                </a>
+                <div class="donations">
+                    <a href="#donateform" class="donateBit"><img src="donatebutton.jpg" alt="Bitcoin Donate Button" border="0" height="40" width="100"></a>
+                    <a href="#donateCard">
+                        <button class="cardDonate">Donate with Card</button>
+                    </a>
+                </div>
                 <div id="donateCard" class="overlay" style="width:70% important!;">
                     <div class="popup" style="width:70% important!;">
                         <a class="close" href="#donate">&times;</a>
@@ -292,7 +302,7 @@
                     </div>
                 </div>
                 <div class="box">
-                    <a href="#donateform"><img src="donatebutton.jpg" alt="Bitcoin Donate Button" border="0" height="40" width="100"></a>
+
                 </div>
     </center>
     <div id="donateform" class="overlay">
